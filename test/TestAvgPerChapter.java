@@ -1,11 +1,16 @@
 import Library.*;
 import org.junit.jupiter.api.*;
+import org.mockito.Mock;
+
 import static org.mockito.Mockito.*;
 
 public class TestAvgPerChapter {
 
     Library library;
+
+    @Mock
     Book book1;
+    @Mock
     Book book2;
 
     @Test
@@ -21,8 +26,6 @@ public class TestAvgPerChapter {
 
     public void setUp(){
         library = new Library();
-        book1 = mock(Book.class);
-        book2 = mock(Book.class);
 
         when(book1.averagePagesPerChapter()).thenReturn(50.0);
         when(book2.averagePagesPerChapter()).thenReturn(75.0);
