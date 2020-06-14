@@ -39,6 +39,7 @@ public class TestListOfAuthors {
         book1 = mock(Book.class);
         book2 = mock(Book.class);
 
+        //Two different options for consecutive stubbing
         when(book1.getAuthor()).thenReturn("Klaus", "Peter", "Hans");
         when(book2.getAuthor()).thenReturn("Marie").thenReturn("Anna").thenReturn("Petra");
 

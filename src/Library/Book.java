@@ -1,13 +1,11 @@
 package Library;
 
 public class Book{
-    private String title;
     private String author;
     private int pageNumber;
     private int chapterNumber;
 
-    public Book(String title, String author, int pageNumber, int chapterNumber){
-        this.title = title;
+    public Book(String author, int pageNumber, int chapterNumber){
         this.author = author;
         this.pageNumber = pageNumber;
         this.chapterNumber = chapterNumber;
