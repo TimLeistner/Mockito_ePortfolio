@@ -19,6 +19,8 @@ public class Book{
         return pageNumber;
     }
 
+    public int getChapterNumber() {return chapterNumber;}
+
     public double averagePagesPerChapter(){
         return pageNumber/chapterNumber;
     }

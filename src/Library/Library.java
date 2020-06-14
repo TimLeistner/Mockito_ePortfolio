@@ -24,6 +24,17 @@ public class Library{
         return sum;
     }
 
+    public double getAvgChaptersPerBook(){
+        double result = 0;
+
+        for(Book book:bookList){
+            result += book.getChapterNumber();
+        }
+        result = result/bookList.size();
+
+        return result;
+    }
+
     public double getAvgPagesPerChapter(){
         double result = 0;
 
