@@ -1,6 +1,7 @@
 package Library;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class Library{
     LinkedList<Book> bookList;
@@ -21,5 +22,26 @@ public class Library{
         }
 
         return sum;
+    }
+
+    public double getAvgPagesPerChapter(){
+        double result = 0;
+
+        for(Book book:bookList){
+            result += book.averagePagesPerChapter();
+        }
+        result = result/bookList.size();
+
+        return result;
+    }
+
+    public List<String> getListOfAuthors(){
+        LinkedList<String> authors = new LinkedList<String>();
+
+        for(Book book:bookList){
+            authors.add(book.getAuthor());
+        }
+
+        return authors;
     }
 }

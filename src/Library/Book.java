@@ -13,20 +13,12 @@ public class Book{
         this.chapterNumber = chapterNumber;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
     public String getAuthor() {
         return author;
     }
 
     public int getPageNumber() {
         return pageNumber;
-    }
-
-    public int getChapterNumber() {
-        return chapterNumber;
     }
 
     public double averagePagesPerChapter(){
