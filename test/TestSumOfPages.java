@@ -17,6 +17,7 @@ public class TestSumOfPages {
 
     private void setUp(){
         library = new Library();
+
         book1 = mock(Book.class);
         when(book1.getPageNumber()).thenReturn(200);
 

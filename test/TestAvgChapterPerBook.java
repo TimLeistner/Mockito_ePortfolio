@@ -29,6 +29,7 @@ public class TestAvgChapterPerBook {
 
         Assertions.assertEquals(library.getAvgChaptersPerBook(), 4.5);
 
+        //Stub overwrites normal object behaviour
         when(book1.getChapterNumber()).thenReturn(10);
 
         Assertions.assertEquals(library.getAvgChaptersPerBook(), 7);

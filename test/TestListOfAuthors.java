@@ -17,6 +17,7 @@ public class TestListOfAuthors {
 
         List<String> authorList;
 
+        //With each call of getListOfAuthors() the next defined stub is used
         authorList = library.getListOfAuthors();
         Assertions.assertTrue(authorList.contains("Klaus"));
         Assertions.assertTrue(authorList.contains("Marie"));
