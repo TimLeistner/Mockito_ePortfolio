@@ -29,7 +29,7 @@ public class Book{
         return chapterNumber;
     }
 
-    public float averagePagesPerChapter(){
+    public double averagePagesPerChapter(){
         return pageNumber/chapterNumber;
     }
 }
