@@ -1,6 +1,6 @@
 import Library.*;
 import org.junit.jupiter.api.*;
-import org.mockito.Mockito;
+import static org.mockito.Mockito.*;
 
 public class TestSumOfPages {
 
@@ -16,8 +16,8 @@ public class TestSumOfPages {
 
     private void setUp(){
         library = new Library();
-        book1 = Mockito.mock(Book.class);
-        Mockito.when(book1.getPageNumber()).thenReturn(200);
+        book1 = mock(Book.class);
+        when(book1.getPageNumber()).thenReturn(200);
 
         library.addBook(book1);
     }
