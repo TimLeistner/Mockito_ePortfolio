@@ -11,16 +11,9 @@ public class TestSumOfPages {
     @Test
     public void testSumOfPages(){
         setUp();
-
-        Assertions.assertEquals(library.getSumOfPages(), 200);
     }
 
     private void setUp(){
-        library = new Library();
-
-        book1 = mock(Book.class);
-        when(book1.getPageNumber()).thenReturn(200);
-
-        library.addBook(book1);
+        
     }
 }
